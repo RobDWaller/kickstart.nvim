@@ -228,11 +228,11 @@ do
   vim.keymap.set('n', '<C-j>', '<C-w><C-j>', { desc = 'Move focus to the lower window' })
   vim.keymap.set('n', '<C-k>', '<C-w><C-k>', { desc = 'Move focus to the upper window' })
 
--- Rob is great key map
-vim.keymap.set('n', '<leader>rob', '<cmd>echo "Rob is Great!!"<cr>', { desc = 'Output message about Rob' })
+  -- Rob is great key map
+  vim.keymap.set('n', '<leader>rob', '<cmd>echo "Rob is Great!!"<cr>', { desc = 'Output message about Rob' })
 
--- [[ Basic Autocommands ]]
---  See `:help lua-guide-autocommands`
+  -- [[ Basic Autocommands ]]
+  --  See `:help lua-guide-autocommands`
   -- NOTE: Some terminals have colliding keymaps or are not able to send distinct keycodes
   -- vim.keymap.set("n", "<C-S-h>", "<C-w>H", { desc = "Move window to the left" })
   -- vim.keymap.set("n", "<C-S-l>", "<C-w>L", { desc = "Move window to the right" })
@@ -975,7 +975,7 @@ do
   -- NOTE: You can add your own plugins, configuration, etc from `lua/custom/plugins/*.lua`
   --
   --  Uncomment the following line and add your plugins to `lua/custom/plugins/*.lua` to get going.
-  -- require 'custom.plugins'
+  require 'custom.plugins'
 end
 
 -- The line beneath this is called `modeline`. See `:help modeline`
